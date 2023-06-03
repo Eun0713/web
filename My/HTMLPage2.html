@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="C:\Users\js020\OneDrive\바탕 화면\My\CSS\mainstyle.css">
+
+  <style>
+    /* 추가적인 CSS 스타일링 */
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    function showSection(sectionId) {
+      const sections = document.getElementsByClassName('section');
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.add('hidden');
+      }
+      const section = document.getElementById(sectionId);
+      section.classList.remove('hidden');
+    }
+    function showAllSections() {
+      const sections = document.getElementsByClassName('section');
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove('hidden');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showAllSections()">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <h1>Welcome to My Portfolio</h1>
+      <p>It's a personal website that introduces me.</p>
+      <a href="#" onclick="showSection('about')">Learn More</a>
+    </section>
+
+    <section id="about" class="section hidden">
+      <div class="about-content">
+      <img src="C:\Users\js020\OneDrive\바탕 화면\My\image\my.jpg" alt="My Profile Picture" class="profile-image">
+
+        <div class="profile-text">
+          <h2>About Me</h2>
+          <p>제 이름은 이다은입니다. 저는 21학년도에 강원대학교 컴퓨터공학과에 입학했습니다. 제가 저의 전공을 컴퓨터공학과로 선택한 이유는 어렸을 때부터 로봇 코딩을 좋아했기 때문입니다. 중학교 시절, 어머니의 
+          권유로 로봇 코딩학원을 다닌 적이 있습니다. 그곳에서 코딩에 관한 것들을 처음으로 접하였고 내가 프로그램한대로 동작하는 로봇이 신기하기만 했습니다. 저는 로봇에 대해 더 많은 것을 배우고자  FIRST LEGO League라는 미국 FIRST 재단과 덴마크 LEGO사가 공동으로 운영하는 청소년들을
+위한 전 세계적인 로봇 대회에 참여했습니다. 이 대회에는 무려 98개국, 32만명 4만팀이 참가하는 세계에서 가장 큰 규모의 로봇대회로써 대한민국은 현재 FEST 창의공학교육협회가 매년 대회를 개최하고 있습니다. FLL 대회는 매년 하나의 주제를
+정해 그 주제에 맞는 15개정도의 미션을 푸는 로봇 경기이며 총 3라운드에 걸쳐 진행됩니다. 하지만 로봇경기 결과만으로 순위를 정하는 것이 아니라 로봇경기 25%, 로봇 디자인 및 프로그래밍 심사 25%, 주제에 대한 연구 심사(프로젝트) 25%, 핵심가치(팀 워크) 25%로 심사하여 종합우승 즉, 챔피언을, 각각의 분야에서 가장 큰 점수를 획득하는 팀에게 부문별 시상을 하는 “잘 설
+계된” 대회입니다. 저는 중학교 때부터 고등학교 때까지 매년 이 대회에 참여했습니다. 개인전으로 치뤄지는 대회가 아닌 5~10명 정도의 팀으로 치루는 단체전인 만큼 저는 이 대회를 참여하면서 코딩 뿐만이 아닌 리더쉽, 협동 등 많은 것을 베울 수 있었습니다.</p>
+        </div>
+      </div>
+
+    </section>
+<section id="projects" class="section hidden">
+  <h2>My Projects</h2>
+  <p>제가 FLL 대회에 참여했던 시절에 진행했던 프로젝트에 대한 소개입니다.</p>
+  <ul>
+    <li>
+      <h3>Project 1</h3>
+      <p>2017-2018 FLL 전국대회 우승, 헝가리 데브레첸 [ Debrecen ] 에서 열린 ‘OPEN INVITATIONAL CENTRAL EUROPE’ 한국 대표로 참가</p>
+      <p>2018년도 FLL의 주제:<strong> "물(HYDRO DYNAMICS)"</strong></p>
+      <a href="C:\Users\js020\OneDrive\바탕 화면\개인활동자료 및 실적물-3-6.pdf" target="_blank">View PDF</a> <!-- 수정: PDF 파일에 대한 링크 추가 -->
+    </li>
+    <li>
+      <h3>Project 2</h3>
+      <p>2018-2019 FLL 한국대회 로봇 퍼포먼스 1위, 2019년도 유럽 세계대회 터키 이즈미르[Izmir] 참가</p>
+      <p>2018-2019 FLL의 주제:<strong> "우주(INTO ORBIT)"</strong></p>
+      <a href="C:\Users\js020\OneDrive\바탕 화면\개인활동자료 및 실적물-9-11.pdf" target="_blank">View PDF</a> <!-- 수정: PDF 파일에 대한 링크 추가 -->
+    </li>
+    <li>
+      <h3>Project 3</h3>
+      <p>2016-2017 FLL의 주제: <strong> "동물(Animal allies)"</strong></p>
+      <a href="C:\Users\js020\OneDrive\바탕 화면\개인활동실적.pdf" target="_blank">View PDF</a> <!-- 수정: PDF 파일에 대한 링크 추가 -->
+    </li>
+  </ul>
+</section>
+
+
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // 홈 페이지 로딩 시 모든 섹션 보이기
+    const sections = document.getElementsByClassName('section');
+    for (let i = 0; i < sections.length; i++) {
+      sections[i].classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
+
+
+
+
